@@ -4,7 +4,6 @@ import { joinURL, parseURL, withBase, withoutBase } from "ufo";
 import chalk from "chalk";
 import { createRouter as createRadixRouter, toRouteMatcher } from "radix3";
 import { defu } from "defu";
-import type { fetch as Fetch, FetchOptions } from "ofetch";
 import { createNitro } from "./nitro";
 import { build } from "./build";
 import type { Nitro, NitroRouteRules, PrerenderRoute } from "./types";
