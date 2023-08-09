@@ -2,7 +2,6 @@ import { tmpdir } from "node:os";
 import { promises as fsp } from "node:fs";
 import { join, resolve } from "pathe";
 import { listen, Listener } from "listhen";
-import fse from "fs-extra";
 import destr from "destr";
 import { fetch, FetchOptions } from "ofetch";
 import { expect, it, afterAll, beforeAll, describe } from "vitest";
@@ -36,11 +35,14 @@ export const describeIf = (condition, title, factory) =>
         it.skip("skipped", () => {});
       });
 
-export async function setupTest(preset: string) {
+export async function setupTest(
+  preset: string,
+  nitroOptions?: _nitro.NitroConfig
+) {
   const fixtureDir = fileURLToPath(new URL("fixture", import.meta.url).href);
   const presetTempDir = resolve(
     process.env.NITRO_TEST_TMP_DIR || join(tmpdir(), "nitro-tests"),
-    preset
+    preset + Object.keys(nitroOptions ?? {}).join("")
   );
 
   await fsp.rm(presetTempDir, { recursive: true }).catch(() => {});
@@ -76,6 +78,7 @@ export async function setupTest(preset: string) {
       preset !== "cloudflare" &&
       preset !== "cloudflare-pages" &&
       preset !== "vercel-edge",
+    ...nitroOptions,
   }));
 
   if (ctx.isDev) {
@@ -509,8 +512,11 @@ export function testNitro(
           "foo=bar, bar=baz, test=value; Path=/, test2=value; Path=/";
       }
 
-      // Aws lambda v1
-      if (ctx.preset === "aws-lambda" && ctx.lambdaV1) {
+      // Aws lambda v1 && edge
+      if (
+        ctx.preset === "aws-lambda" &&
+        (ctx.lambdaV1 || ctx.nitro.options.awsLambda.target === "edge")
+      ) {
         expectedCookies =
           "foo=bar, bar=baz,test=value; Path=/,test2=value; Path=/";
       }
