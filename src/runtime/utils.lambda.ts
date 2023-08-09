@@ -78,7 +78,7 @@ export function normalizeCloudfrontIncomingHeaders(headers: CloudFrontHeaders) {
   return Object.fromEntries(
     Object.entries(headers).map(([key, keyValues]) => [
       key,
-      keyValues.map((kv) => kv.value),
+      keyValues.map(({ value }) => value),
     ])
   );
 }
@@ -89,7 +89,7 @@ export function normalizeCloudfrontBody(body?: CloudFrontRequest["body"]) {
   }
 
   const bodyString = body;
-  if (body.encoding !== undefined && body.encoding === "base64") {
+  if (body.encoding === "base64") {
     bodyString.data = Buffer.from(body.data, "base64").toString("utf8");
     bodyString.data = decodeURIComponent(bodyString.data);
   }
