@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v2.11.10
+
+[compare changes](https://github.com/nitrojs/nitro/compare/4c634e7e4660eb7cc6e2b9c34d809e0e93a327f6...v2.11.10)
+
+### 🩹 Fixes
+
+- **open-api:** Load virtual files from rollup rather than fs ([#3324](https://github.com/nitrojs/nitro/pull/3324))
+- **netlify-edge:** Enable function caching ([#3321](https://github.com/nitrojs/nitro/pull/3321))
+- Inherit `context._platform` for direct fetch ([#3336](https://github.com/nitrojs/nitro/pull/3336))
+
+### 💅 Refactors
+
+- **cloudflare-durable:** Expose `publish` from durable object ([#3305](https://github.com/nitrojs/nitro/pull/3305))
+
+### 📖 Documentation
+
+- Correct example paths for  `serverAssets` option ([#3315](https://github.com/nitrojs/nitro/pull/3315))
+- **azure:** Build command missing `run` ([#3313](https://github.com/nitrojs/nitro/pull/3313))
+
+### 🏡 Chore
+
+- Update deps ([ffb69deb](https://github.com/nitrojs/nitro/commit/ffb69deb))
+- Update lockfile ([64588c59](https://github.com/nitrojs/nitro/commit/64588c59))
+
+### ❤️ Contributors
+
+- Pooya Parsa ([@pi0](https://github.com/pi0))
+- Thibault Vlacich <thibault.vlacich@gmail.com>
+- Luis Peralta <luis.peralta@gmail.com>
+- Daniel Roe ([@danielroe](https://github.com/danielroe))
+- Balázs Németh ([@zsilbi](https://github.com/zsilbi))
+
 ## v2.11.9
 
 [compare changes](https://github.com/nitrojs/nitro/compare/v2.11.8...v2.11.9)
