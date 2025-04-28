@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v2.11.11
+
+[compare changes](https://github.com/nitrojs/nitro/compare/v2.11.10...v2.11.11)
+
+### 🩹 Fixes
+
+- **static:** Remove id from 404 `statusMessage` ([#3338](https://github.com/nitrojs/nitro/pull/3338))
+
+### ❤️ Contributors
+
+- Pooya Parsa <pyapar@gmail.com>
+
 ## v2.11.10
 
 [compare changes](https://github.com/nitrojs/nitro/compare/4c634e7e4660eb7cc6e2b9c34d809e0e93a327f6...v2.11.10)
