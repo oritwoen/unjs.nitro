@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v2.11.12
+
+[compare changes](https://github.com/nitrojs/nitro/compare/v2.11.11...v2.11.12)
+
+### 🩹 Fixes
+
+- **dynamic-require:** Update regexp for new webpack import pattern ([#3339](https://github.com/nitrojs/nitro/pull/3339))
+- **aws-lambda-streaming:** Handle undefined response body ([#3346](https://github.com/nitrojs/nitro/pull/3346))
+- Scan handlers when initialising nitro ([6e1e4f7d](https://github.com/nitrojs/nitro/commit/6e1e4f7d))
+
+### 💅 Refactors
+
+- Better error for scanned dirs being a file ([#3342](https://github.com/nitrojs/nitro/pull/3342))
+
+### 📖 Documentation
+
+- **cloudflare:** Add `deployConfig` and prefer modules ([#3259](https://github.com/nitrojs/nitro/pull/3259))
+- Add `workspaceDir` config option ([#3347](https://github.com/nitrojs/nitro/pull/3347))
+
+### 🏡 Chore
+
+- Update deps ([11524d28](https://github.com/nitrojs/nitro/commit/11524d28))
+
+### ❤️ Contributors
+
+- David Mo <david@dmo.ooo>
+- Emily-shen ([@emily-shen](https://github.com/emily-shen))
+- Restent Ou ([@gxres042](https://github.com/gxres042))
+- Kasparas Galdikas ([@Kasparas-G55](https://github.com/Kasparas-G55))
+- Pooya Parsa ([@pi0](https://github.com/pi0))
+- McKittrick Kaminski ([@mckamyk](https://github.com/mckamyk))
+- Daniel Roe ([@danielroe](https://github.com/danielroe))
+
 ## v2.11.11
 
 [compare changes](https://github.com/nitrojs/nitro/compare/v2.11.10...v2.11.11)
