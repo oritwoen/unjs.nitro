@@ -94,6 +94,7 @@ function _createStubProxy(): PlatformProxy {
     ctx: {
       waitUntil() {},
       passThroughOnException() {},
+      props: {},
     },
     caches: {
       open(): Promise<_CacheStub> {
