@@ -8,11 +8,13 @@ const _proxy = _getPlatformProxy()
     console.error("Failed to initialize wrangler bindings proxy", error);
     return _createStubProxy();
   })
+  // eslint-disable-next-line unicorn/prefer-top-level-await
   .then((proxy) => {
     (globalThis as any).__env__ = proxy.env;
     return proxy;
   });
 
+// eslint-disable-next-line unicorn/prefer-top-level-await
 (globalThis as any).__env__ = _proxy.then((proxy) => proxy.env);
 
 export default <NitroAppPlugin>function (nitroApp) {
