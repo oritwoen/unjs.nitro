@@ -397,6 +397,6 @@ function normalizeRouteDest(route: string) {
       })
       // Only use filesystem-safe characters
       .map((segment) => segment.replace(/[^a-zA-Z0-9_.[\]]/g, "-"))
-      .join("/")
+      .join("/") || "index"
   );
 }
