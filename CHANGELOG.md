@@ -2,6 +2,93 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v2.12.0
+
+[compare changes](https://github.com/nitrojs/nitro/compare/v2.11.12...v2.12.0)
+
+### 🚀 Enhancements
+
+- Dev presets ([#3467](https://github.com/nitrojs/nitro/pull/3467))
+- Add cloudflare dev presets ([#3470](https://github.com/nitrojs/nitro/pull/3470))
+- **vercel:** Generate o11y routes ([#3474](https://github.com/nitrojs/nitro/pull/3474))
+- `ssrRoutes` ([#3475](https://github.com/nitrojs/nitro/pull/3475))
+- **aws-amplify:** Support and default to node.js 20.x runtime ([#3427](https://github.com/nitrojs/nitro/pull/3427))
+- Netlify dev preset ([#3471](https://github.com/nitrojs/nitro/pull/3471))
+- Netlify dev preset " ([#3471](https://github.com/nitrojs/nitro/pull/3471))
+
+### 🩹 Fixes
+
+- **types:** Resolve absolute paths for type imports ([#3368](https://github.com/nitrojs/nitro/pull/3368))
+- **cloudflare:** Globally polyfill env ([#3401](https://github.com/nitrojs/nitro/pull/3401))
+- **dev:** Only use build dir for output ([#3413](https://github.com/nitrojs/nitro/pull/3413))
+- **rollup:** Ensure that external dependency files have write permission ([#3419](https://github.com/nitrojs/nitro/pull/3419))
+- **types:** Enable `skipLibCheck` by default ([#3373](https://github.com/nitrojs/nitro/pull/3373))
+- **cloudflare-module:** Generate `_headers` in dist ([#3442](https://github.com/nitrojs/nitro/pull/3442))
+- Respect `output` configs for `preview`/`deploy` command tips ([#3388](https://github.com/nitrojs/nitro/pull/3388))
+- **prerender:** Pin `serverDir` to subdir of `buildDir` ([#3394](https://github.com/nitrojs/nitro/pull/3394))
+- **azure:** Prefer `bodyBuffer` for request body ([#3375](https://github.com/nitrojs/nitro/pull/3375))
+- **cloudflare:** Fix tips for the `preview`/`deploy` commands ([#3389](https://github.com/nitrojs/nitro/pull/3389))
+- **vercel:** Clamp runtime config to valid node versions ([#2824](https://github.com/nitrojs/nitro/pull/2824))
+- **vercel:** Use index as for `/` route ([128c517b](https://github.com/nitrojs/nitro/commit/128c517b))
+
+### 💅 Refactors
+
+- Depend on unenv polyfill for `global` ([#3364](https://github.com/nitrojs/nitro/pull/3364))
+- Add `tsConfig` to `types:extend` hook ([#3399](https://github.com/nitrojs/nitro/pull/3399))
+- Update unenv and node compat ([#3421](https://github.com/nitrojs/nitro/pull/3421))
+- **cloudflare:** Update wrangler types ([#3436](https://github.com/nitrojs/nitro/pull/3436))
+- **vercel:** Enable o11y with compatibility date ([e2dc6385](https://github.com/nitrojs/nitro/commit/e2dc6385))
+
+### 📖 Documentation
+
+- Fix typo ([#3415](https://github.com/nitrojs/nitro/pull/3415))
+- **database:** Fix example ([#3395](https://github.com/nitrojs/nitro/pull/3395))
+- Migrate to undocs 0.3 ([4e560453](https://github.com/nitrojs/nitro/commit/4e560453))
+- Simplify and update h3 links ([b2276b47](https://github.com/nitrojs/nitro/commit/b2276b47))
+- **cache:** Add note about normalizing keys ([#3459](https://github.com/nitrojs/nitro/pull/3459))
+- Remove warning banner ([5f3fad41](https://github.com/nitrojs/nitro/commit/5f3fad41))
+- Update vercel page ([2c9f8ea4](https://github.com/nitrojs/nitro/commit/2c9f8ea4))
+- Remove old _dir.yml files ([5d431d31](https://github.com/nitrojs/nitro/commit/5d431d31))
+- **cloudflare:** Update guide for using dev presets ([#3479](https://github.com/nitrojs/nitro/pull/3479))
+- **vercel:** Add observability section ([644cbe07](https://github.com/nitrojs/nitro/commit/644cbe07))
+
+### 🏡 Chore
+
+- Update dependencies ([017c7436](https://github.com/nitrojs/nitro/commit/017c7436))
+- Fix lint issue ([046a8c29](https://github.com/nitrojs/nitro/commit/046a8c29))
+- Fix type issues ([bb627052](https://github.com/nitrojs/nitro/commit/bb627052))
+- **release:** V2.11.13 ([3e5779af](https://github.com/nitrojs/nitro/commit/3e5779af))
+- Update deps ([099b18fc](https://github.com/nitrojs/nitro/commit/099b18fc))
+- Fix lint issues ([624e99b3](https://github.com/nitrojs/nitro/commit/624e99b3))
+- Apply automated updates ([361c829a](https://github.com/nitrojs/nitro/commit/361c829a))
+- Fix type ([4e7dbe39](https://github.com/nitrojs/nitro/commit/4e7dbe39))
+- Small internal typo ([#3477](https://github.com/nitrojs/nitro/pull/3477))
+- Update deps ([e2eb475b](https://github.com/nitrojs/nitro/commit/e2eb475b))
+- Lint ([bbaa07dd](https://github.com/nitrojs/nitro/commit/bbaa07dd))
+- Update docs lockfile ([676c97c1](https://github.com/nitrojs/nitro/commit/676c97c1))
+- Sync compat date with docs/today ([57aea0f6](https://github.com/nitrojs/nitro/commit/57aea0f6))
+
+### ✅ Tests
+
+- Update tls test endpoint ([e680f420](https://github.com/nitrojs/nitro/commit/e680f420))
+- Bypass tls test for deno and bun ([6da3d458](https://github.com/nitrojs/nitro/commit/6da3d458))
+
+### ❤️ Contributors
+
+- Pooya Parsa ([@pi0](https://github.com/pi0))
+- LasseSLambertsen ([@LasseSLambertsen](https://github.com/LasseSLambertsen))
+- Connor Pearson ([@cjpearson](https://github.com/cjpearson))
+- Kricsleo ([@kricsleo](https://github.com/kricsleo))
+- Daniel Roe ([@danielroe](https://github.com/danielroe))
+- Mr Kaashee <mrkaashee@gmail.com>
+- Luke Nelson <luke@nelson.zone>
+- Adam DeHaven ([@adamdehaven](https://github.com/adamdehaven))
+- Restent Ou ([@gxres042](https://github.com/gxres042))
+- ChunyuPCY ([@ChunyuPCY](https://github.com/ChunyuPCY))
+- Nagaakihoshi <nagaaki.hoshi@yourmystar.jp>
+- Clément Guillot <guillot.clement@pm.me>
+- Jonas Thelemann <e-mail@jonas-thelemann.de>
+
 ## v2.11.13
 
 [compare changes](https://github.com/nitrojs/nitro/compare/v2.11.12...v2.11.13)
