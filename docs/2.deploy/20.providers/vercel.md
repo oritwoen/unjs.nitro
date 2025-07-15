@@ -29,6 +29,26 @@ Monorepos are supported by Vercel. However a custom "[Root Directory](https://ve
 
 Examples of values for "Root Directory": `apps/web` or `packages/app`.
 
+## Observability
+
+Nitro (>=2.12) generates routing hints for [functions observability insights](https://vercel.com/docs/observability/insights#vercel-functions), providing a detailed view of performance broken down by route.
+
+To enable this feature, ensure you are using a compatibility date of `2025-07-15` or later.
+
+```ts [nitro.config.ts]
+export default defineNitroConfig({
+    compatibilityDate: "2025-07-15", // or "latest"
+})
+```
+
+```ts [nuxt.config.ts]
+export default defineNuxtConfig({
+    compatibilityDate: "2025-07-15", // or "latest"
+})
+```
+
+Framework integrations can use the `ssrRoutes` configuration to declare SSR routes. For more information, see [#3475](https://github.com/nitrojs/nitro/pull/3475).
+
 ## Custom build output configuration
 
 You can provide additional [build output configuration](https://vercel.com/docs/build-output-api/v3) using `vercel.config` key inside `nitro.config`. It will be merged with built-in auto-generated config.
