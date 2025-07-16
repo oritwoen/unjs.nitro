@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v2.12.1
+
+[compare changes](https://github.com/nitrojs/nitro/compare/65e514d873da1d1d9edd4d9576d48d90b13e0fac...v2.12.1)
+
+### 🩹 Fixes
+
+- **build:** Resolve `deploy` and `preview` commands ([#3481](https://github.com/nitrojs/nitro/pull/3481))
+
+### 🏡 Chore
+
+- Update changelog ([1241a92c](https://github.com/nitrojs/nitro/commit/1241a92c))
+- Add playground to workspace ([a1b3b1bf](https://github.com/nitrojs/nitro/commit/a1b3b1bf))
+
+### ❤️ Contributors
+
+- Pooya Parsa ([@pi0](https://github.com/pi0))
+
 ## v2.12.0
 
 See [Github Release Notes](https://github.com/nitrojs/nitro/releases/tag/v2.12.0).
