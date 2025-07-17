@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## v2.12.3
+
+[compare changes](https://github.com/nitrojs/nitro/compare/v2.12.2...v2.12.3)
+
+### 🩹 Fixes
+
+- **config:** Fallback to `nitro-dev` for older compatibility dates ([#3487](https://github.com/nitrojs/nitro/pull/3487))
+- Store `nitro.json` commands relative to output dir ([#3492](https://github.com/nitrojs/nitro/pull/3492))
+- **cloudflare:** Lowercase auto generated worker name ([#3490](https://github.com/nitrojs/nitro/pull/3490))
+
+### ❤️ Contributors
+
+- Falestio Hanif ([@Falestio](https://github.com/Falestio))
+- Pooya Parsa <pyapar@gmail.com>
+
 ## v2.12.2
 
 [compare changes](https://github.com/nitrojs/nitro/compare/v2.12.1...v2.12.2)
