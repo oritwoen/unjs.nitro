@@ -156,8 +156,8 @@ importers:
         specifier: ^2.3.0
         version: 2.3.0
       pretty-bytes:
-        specifier: ^6.1.1
-        version: 6.1.1
+        specifier: ^7.0.1
+        version: 7.0.1
       radix3:
         specifier: ^1.1.2
         version: 1.1.2
@@ -204,8 +204,8 @@ importers:
         specifier: ^5.2.0
         version: 5.2.0
       unplugin-utils:
-        specifier: ^0.2.5
-        version: 0.2.5
+        specifier: ^0.3.0
+        version: 0.3.0
       unstorage:
         specifier: ^1.17.0
         version: 1.17.0(@azure/identity@4.11.1)(@netlify/blobs@10.0.9)(db0@0.3.2)(ioredis@5.7.0)
@@ -6247,6 +6247,10 @@ packages:
   unplugin-utils@0.2.5:
     resolution: {integrity: sha512-gwXJnPRewT4rT7sBi/IvxKTjsms7jX7QIDLOClApuZwR49SXbrB1z2NLUZ+vDHyqCj/n58OzRRqaW+B8OZi8vg==}
     engines: {node: '>=18.12.0'}
+
+  unplugin-utils@0.3.0:
+    resolution: {integrity: sha512-JLoggz+PvLVMJo+jZt97hdIIIZ2yTzGgft9e9q8iMrC4ewufl62ekeW7mixBghonn2gVb/ICjyvlmOCUBnJLQg==}
+    engines: {node: '>=20.19.0'}
 
   unplugin@2.3.8:
     resolution: {integrity: sha512-lkaSIlxceytPyt9yfb1h7L9jDFqwMqvUZeGsKB7Z8QrvAO3xZv2S+xMQQYzxk0AGJHcQhbcvhKEstrMy99jnuQ==}
@@ -13471,6 +13475,11 @@ snapshots:
   unpipe@1.0.0: {}
 
   unplugin-utils@0.2.5:
+    dependencies:
+      pathe: 2.0.3
+      picomatch: 4.0.3
+
+  unplugin-utils@0.3.0:
     dependencies:
       pathe: 2.0.3
       picomatch: 4.0.3
